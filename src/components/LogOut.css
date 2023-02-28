@@ -1,0 +1,12 @@
+.logout-btn {
+    color: #6C63FF;
+    text-decoration: underline;
+    font-size: 1em;
+    padding-bottom: 0%;
+    list-style-type: none;
+    max-height: 20px;
+    font-weight: 500;
+    background-color: transparent;
+    border: none;
+
+}

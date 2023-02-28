@@ -1,0 +1,68 @@
+.navbar{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 0px;
+    display: flex;
+    text-decoration: none;
+    justify-content: flex-end;
+    position: sticky;
+    max-width: 95%;
+    padding-top: 1%;
+}
+    
+
+.log-in {
+    color: #6C63FF;
+    text-decoration: underline;
+}
+
+.nav-item {
+    color: #3F3D56;
+    font-size: 1.5vw;
+    padding: 1%;
+    padding-bottom: 0%;
+    list-style-type: none;
+    /* max-height: 20px; */
+    font-weight: 500;
+
+}
+
+.sign-up { 
+    white-space: nowrap;
+    background-color: #6C63FF;
+    color: white;
+    max-width: 100%;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5vw;
+    font-family: gelica;   
+    font-weight: 500;
+    z-index: 999;
+}
+.get-started:hover {
+    cursor: pointer;
+}
+
+.nav-item:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    color: gray;
+}
+
+a:visited{
+    /* color: #3F3D56; */
+    text-decoration: none;
+}
+
+a{
+    color: #3F3D56;
+    text-decoration: none;
+}
+
+.sign-up a{
+    color: white;
+    text-decoration: none;
+}
+
+

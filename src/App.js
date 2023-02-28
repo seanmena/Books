@@ -1,24 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import SignIn from "./screens/SignIn";
+import SignUp from "./screens/SignUp";
+import Book from "./screens/Book";
+// import Main from "./screens/Main";
+import { UserAuthContextProvider } from "./components/UserAuthContext";
+import ProtectedRoute from "./utils/ProtectedRoute";
+import Page from "./screens/Page";
+import MyBooks from "./screens/MyBooks";
+import LogOut from "./components/LogOut";
+import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <UserAuthContextProvider>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Page />} />
+        <Route path="/signin" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/logout" element={<LogOut />} />
+
+        <Route
+          path="/search"
+          element={
+            <ProtectedRoute>
+              <Book />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="mybooks"
+          element={
+            <ProtectedRoute>
+              <MyBooks />
+            </ProtectedRoute>
+          }
+        />
+      </Routes>
+    </UserAuthContextProvider>
   );
 }
 
