@@ -25,7 +25,6 @@
     list-style-type: none;
     /* max-height: 20px; */
     font-weight: 500;
-
 }
 
 .sign-up { 
@@ -66,3 +65,154 @@ a{
 }
 
 
+
+
+/* line */
+
+.hamburger {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 999;
+    float: right;
+    padding-bottom: 5%;
+}
+
+.burger {
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    transform-origin: 1px;
+}
+
+.x-p{   
+    margin-top: 2%;
+    z-index: 1000;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 1000;
+    float: right;
+    padding-bottom: 5%;
+}
+
+.x{
+    z-index: 1000;
+    transform: scale(1.5);
+    width: 1.5rem;
+    height: 0.20rem;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    transform-origin: 1px;
+}
+
+.x1{
+    transform: rotate(48deg);
+}
+
+.x2{
+    transform: rotate(-48deg);
+}
+
+.x-p:hover{
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+.hide-me{
+    display: none;
+}
+
+.blur-me {
+    filter: blur(8px);
+}
+
+
+
+@media screen and (max-width: 800px){
+
+    .log-in {
+        color: #f2f2f2;
+    }
+
+    .sign-up{
+        display: none;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .hide-me{
+        display: none;
+    }
+
+    a{
+        color: #f2f2f2;
+    }
+
+
+    .nav-menu.active {
+        margin: 0 auto;
+        right: 0;
+        z-index: 998;
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        transition: all 0.5s ease;
+        background-color: #3F3D56; 
+    }
+
+
+    .nav-menu li {
+        text-align: left;
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 25px;
+        margin-top: 15%;
+        margin-left: 10%;
+    }
+
+
+    .nav-menu a:visited {
+        color: #f2f2f2;
+    }
+
+    .nav-menu a:hover {
+        opacity: .6;
+    }
+
+    .nav-item:hover{
+        transform: none;
+        cursor: pointer;
+        color: gray;
+    }
+
+
+    .hamburger {
+        margin-right: 1%;
+        width: 2em;
+        height: 2em;
+        z-index: 999;
+        float: right;
+        padding-top: 3%;
+        display: flex;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+
+    .nav-hero {
+        height: 60px;
+    }
+} 

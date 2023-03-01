@@ -18,7 +18,7 @@ const SignIn = () => {
     setError("");
     try {
       await logIn(email, password);
-      navigate("/mybooks");
+      navigate("/search");
     } catch (err) {
       setError(err.message);
     }

@@ -14,7 +14,6 @@
 }
 
 
-
 .mybook-title{
     max-width: 100%;
     margin: 0;
@@ -28,4 +27,49 @@
     padding: 0;
     margin: 0;
     font-size: 1vw;
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .mybooks {
+        text-align: center;
+        padding-top: 0%;
+        padding-left: 2%;
+        font-size: 5vw;
+        color: #3F3D56;
+    }
+    
+    .book-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        width: 50%;
+        padding-bottom: 10%;
+        overflow: hidden;
+    }
+    
+    
+    .mybook-title{
+        color: #3F3D56;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 5vw;
+        padding-bottom: 1%;
+    }
+    
+    .mybook-author{
+        color: #3F3D56;
+        opacity: .7;
+        padding: 0;
+        margin: 0;
+        font-size: 4vw;
+    }
+
+    .book-img{
+        width: 100%;
+    }
+    
 }

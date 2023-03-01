@@ -43,7 +43,7 @@ const Book = () => {
             <input
               className="search-bar"
               type="search"
-              placeholder="Percy Jackson, Life of pi, etc.."
+              placeholder="The Lightning Thief, Life of pi, etc.."
               value={searchTerm}
               onChange={onInputChange}
             ></input>
@@ -83,9 +83,10 @@ const Book = () => {
                     alt={`${book.volumeInfo.title} book`}
                     src={`http://books.google.com/books/content?id=${book.id}&printsec=frontcover&img=1&zoom=1&source=gbs_api`}
                   />
+
                   <div className="lil-div">
-                    <h3 className="book-title">{book.volumeInfo.title}</h3>
-                    <p className="book-author">{book.volumeInfo.authors}</p>
+                    <h3 className="book-title">{book.volumeInfo.title} </h3>
+                    <p className="book-author">{book.volumeInfo.authors} </p>
                     <p className="book-desc">
                       {book.volumeInfo.description}
                       <button onClick={handleClick} className="add">
