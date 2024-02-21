@@ -50,7 +50,9 @@ const NavBar = () => {
               <LogOut />
             </li>
             <li className="nav-item">
-              <button className="sign-up">Sign Up</button>
+              <button onClick={signClick} className="sign-up">
+                Sign Up
+              </button>
             </li>
           </div>
         </div>
