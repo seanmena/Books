@@ -1,6 +1,6 @@
 # Book Club, a book tracker
 
-Live Link
+Live Link: 
 https://book-club-9650b.firebaseapp.com/
 
 

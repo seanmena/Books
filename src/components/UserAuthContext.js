@@ -18,6 +18,9 @@ export function UserAuthContextProvider({ children }) {
     });
   }
   function signUp(email, password) {
+    if (password.length < 6) {
+      alert("password must be atleast 6 characters");
+    }
     return createUserWithEmailAndPassword(auth, email, password);
   }
   function logOut() {

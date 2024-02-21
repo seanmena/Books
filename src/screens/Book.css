@@ -172,7 +172,7 @@ hr {
     .add:hover {
         color: #D9D9D9;
         font-size: 1em;
-        float: left;
+        float: right;
         cursor: pointer;
     }
 

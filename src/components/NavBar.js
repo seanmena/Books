@@ -4,6 +4,7 @@ import LogOut from "./LogOut";
 import "./NavBar.css";
 import { useUserAuth } from "./UserAuthContext";
 // import { useUserAuth } from "./UserAuthContext";
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
   const { user } = useUserAuth();
@@ -11,6 +12,11 @@ const NavBar = () => {
   const [click, setClick] = useState(false);
 
   const handleClick = () => setClick(!click);
+
+  const navigate = useNavigate();
+  const signClick = () => {
+    navigate("/signup");
+  };
 
   if (user) {
     return (
@@ -84,7 +90,9 @@ const NavBar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <button className="sign-up">Sign Up</button>
+              <button onClick={signClick} className="sign-up" href="/signup">
+                Sign Up
+              </button>
             </li>
           </div>
         </div>
